@@ -48,7 +48,7 @@ footer li{
     text-transform: uppercase;
 }
 /*Form Styles*/
-form{
+#form{
     margin: 0 auto;
     width: 100%;
     
