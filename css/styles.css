@@ -1,0 +1,260 @@
+/* Global Layout Set-up */
+*{
+    box-sizing: border-box;
+}
+
+body{
+
+    font-family: 'Oswald', sans-serif;
+    color: black;
+    background:#e1e8ec;
+    
+}
+h1,h2,h3 {
+    font-family:'Otomanopee One', sans-serif;
+    color:darkslateblue;
+}
+ul {
+    list-style-type: none;
+}
+
+
+a:link {
+    text-decoration: none;
+}
+
+a:hover{
+    color: #4c5175;
+}
+
+img{
+    width: 100%;
+}
+.menu li{
+    font-family: 'Otomanopee One', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.name a{
+        text-transform: capitalize;
+      }
+.item-footer{
+    display:none;
+}
+
+footer li{
+    font-family: 'Otomanopee One', sans-serif;
+    text-transform: uppercase;
+}
+/*Form Styles*/
+form{
+    margin: 0 auto;
+    width: 100%;
+    
+}
+fieldset{
+    border: none;
+}
+textarea{
+    width: 100%;
+}
+button{
+    font-family: 'Otomanopee One' sans-serif;
+    width: 50%;
+    color:#e1e8ec;
+    background:#4c5175;
+    border:none;
+    text-align: center;
+    padding: 20px;
+    font-weight: bold;
+    font-size: 16px;
+    }
+button:hover{
+    background: #f8f8f8;
+    color: #4c5175;
+    cursor: pointer;
+}
+input{
+    width: 100%;
+
+}
+input[type=text]{
+    width:100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+}
+
+
+
+/* Section Styles */
+.menu{
+    color:darkslateblue;
+    display:flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px 0;
+    margin: 5px auto;
+}
+.name{
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 0;
+}
+
+.item{
+    background-color: #f8f8f8;
+    padding: 10px;
+}
+.main-header{
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    text-align: center;
+}
+
+.bio {
+    font-size: 1.25em;
+}
+.profile-img{
+    align-items: center;
+    align-content: center;
+}
+
+.title{
+    background: #f8f8f8;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 0;
+}
+
+#portfolio{
+    display:flex;
+    flex-direction: column;
+    background: #f8f8f8;
+    
+  }
+.project{
+    flex-basis: 100%;
+    text-align: center;
+}
+
+#contact{
+    text-align: center;
+}
+#footer{
+    display:flex;
+    justify-content: space-between;
+    background: #f8f8f8;
+    padding: 10px;
+    height: 100px;
+}
+
+.name-footer{
+    font-size: 18px;
+}
+
+.name-footer,
+.footer-nav{
+    padding:0px;
+    margin: auto;
+}
+
+.item-footer{
+    display: none;
+} 
+
+ 
+
+@media (min-width: 768px){
+    .menu {
+     flex-direction: row;
+     justify-content: center;
+     text-align: center;
+    }
+
+    .name{
+        text-align: center;
+    }
+
+    .item{
+        background-color: transparent;
+    }
+    
+    .main-header{
+        flex-direction: row-reverse;
+        text-align: center;
+    }
+    .profile-img{
+        width: 100%;
+    }
+    #portfolio{
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+
+    }
+    .project{
+        flex-basis: 50%;
+    }
+    .profile-img{
+        align-self: center;
+    }
+    .item-footer a {
+         padding: 0 10px;
+    }
+    .name-footer{
+        font-size: 36px;
+    }
+
+    .item-footer{
+        display: contents;
+    }
+   
+    .back-to-top{
+        display: none;
+    }
+}
+@media (min-width: 1024px){
+    .main-nav{
+        display: flex;
+        justify-content: space-between;
+    }
+   .main-nav h1, 
+   .menu{
+       margin: auto 0;
+   } 
+   
+    .profile-img{
+        width: 25%;
+    }
+    .bio{
+        text-align: center;
+        align-self: center;
+        margin-left: 10px;
+    }
+    #portfolio{
+        justify-content: space-around;
+    }
+
+    .project{
+        flex-basis: 30%; 
+
+    }
+
+   #footer{
+    display: flex;
+    justify-content: space-between;
+   }
+
+   #footer h1,
+   .footer-nav{
+       margin: auto 0;
+   }
+  
+    
+    
+}
+
