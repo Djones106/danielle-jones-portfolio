@@ -72,6 +72,7 @@
             <p>If you're interested in chatting or want more information about what I've been working on, I'd love to hear from you!</p>
 
             <form action="result.html" method = "GET"id="form">
+                <fieldset>
                 <ul>
                     <li>
                         <label for="name">Full Name</label>
@@ -84,13 +85,13 @@
                 </ul>
                     
                      
-                    <fieldset>
+                   
                         <label for="msg">Message</label>
                          <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
                 
                            <ul>
                                 <li class="button">
-                                    <button onClick = "myFunction()"type="submit">Submit</button>
+                                    <button onClick = "myFunction(form);"type="submit">Submit</button>
                                 </li>
                             </ul>
                         </fieldset>
