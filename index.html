@@ -10,7 +10,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Otomanopee+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/styles.css">
-    <script src="js/portfolio.js"></script>
+    
 
 
     <title>Danielle's Portfolio</title>
@@ -76,24 +76,19 @@
                 <ul>
                     <li>
                         <label for="name">Full Name</label>
-                        <input required type="text" name="name" id="user_name" placeholder="Required">
+                        <input required type="text" name="name" id="userName" placeholder="Required">
                     </li>
                     <li>
                         <label for="email">Email Address</label>
-                        <input required type="text" name="email" id="user_email" placeholder="Required">
+                        <input required type="text" name="email" id="userEmail" placeholder="Required">
                     </li>
                 </ul>
-                    
-                     
-                   
-                        <label for="msg">Message</label>
+                                      
+                         <label for="msg">Message</label>
                          <textarea name="user_message" id="msg" cols="30" rows="10"></textarea>
-                
-                           <ul>
-                                <li class="button">
-                                    <button onClick = "myFunction(form);"type="submit">Submit</button>
-                                </li>
-                            </ul>
+                         
+                        <button id="button">Submit</button>
+                             
                         </fieldset>
     
                 
@@ -111,6 +106,6 @@
         </footer>
 
     
-    
+<script src="js/portfolio.js"></script>
 </body>
 </html>

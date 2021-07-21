@@ -31,10 +31,10 @@ form.addEventListener('submit'), function(event){
 
 };
 */
-let input = [];
-/* Everything listed in form converted to array */
+/*let input = [];
+ Everything listed in form converted to array 
 
-/* Capturing person data the put into form */
+/* Capturing person data the put into form 
 const contactForm = (ev) =>{
     ev.preventDefault();
     let form = {
@@ -43,13 +43,43 @@ const contactForm = (ev) =>{
         message: document.getElementById('msg').value,
     }
     if 
-}
+});
 
-/* Calling the information to display in message */
+/* Calling the information to display in message 
 function myFunction(form){
     document.getElementById('result-msg').innerHTML = `Thank you ${form.name}! Now that I have your email - ${form.email} and have read your message: ${form.message} - I'll be in touch soon.`
-
+for (let i = 0; i < input.length; i += 1){
 
 };
 
 document.addEventListener('click', contactForm);
+*/
+
+const userName = document.getElementById('userName');
+const userEmail = document.getElementById('userEmail');
+const msg = document.getElementById('msg');
+const button = document.getElementById('button');
+
+
+
+    button.addEventListener('click', () => {
+        
+        let form = {
+            name: document.getElementById('userName').value,
+            email: document.getElementById('userEmail').value,
+            message: document.getElementById('msg').value,
+        }
+        
+        form.innerHTML = `Thank you ${form.name}! Now that I have your email - ${form.email} and have read your message: ${form.message} - I'll be in touch soon.`
+        
+        
+        
+    });
+
+/*
+    function myFunction(){
+        document.getElementById('result').innerHTML = `Thank you ${form.name}! Now that I have your email - ${form.email} and have read your message: ${form.message} - I'll be in touch soon.`};
+
+        document.getElementById('result') = `Thank you ${form.name}! Now that I have your email - ${form.email} and have read your message: ${form.message} - I'll be in touch soon.`
+event.preventDefault();
+*/
