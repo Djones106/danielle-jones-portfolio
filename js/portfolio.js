@@ -55,16 +55,16 @@ for (let i = 0; i < input.length; i += 1){
 document.addEventListener('click', contactForm);
 */
 
-const userName = document.getElementById('userName');
-const userEmail = document.getElementById('userEmail');
-const msg = document.getElementById('msg');
-const button = document.getElementById('button');
+var userName = document.getElementById('userName');
+var userEmail = document.getElementById('userEmail');
+var msg = document.getElementById('msg');
+var button = document.getElementById('button');
 
 
 
-    button.addEventListener('click', () => {
+    button.addEventListener('click', function() => {
         
-        let form = {
+        var form = {
             name: document.getElementById('userName').value,
             email: document.getElementById('userEmail').value,
             message: document.getElementById('msg').value,
@@ -72,10 +72,11 @@ const button = document.getElementById('button');
         
         form.innerHTML = `Thank you ${form.name}! Now that I have your email - ${form.email} and have read your message: ${form.message} - I'll be in touch soon.`
         
-        
+        return formResult;
         
     });
 
+    
 /*
     function myFunction(){
         document.getElementById('result').innerHTML = `Thank you ${form.name}! Now that I have your email - ${form.email} and have read your message: ${form.message} - I'll be in touch soon.`};

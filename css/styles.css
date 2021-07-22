@@ -20,7 +20,6 @@ ul {
     
 }
 
-
 a:link {
     text-decoration: none;
 }
@@ -49,7 +48,9 @@ footer li{
     font-family: 'Otomanopee One', sans-serif;
     text-transform: uppercase;
 }
+
 /*Form Styles*/
+
 #form{
     margin: 0 auto;
     
@@ -170,7 +171,7 @@ input[type=text]{
     display: none;
 } 
 
- 
+ /*Media Queries*/
 
 @media (min-width: 768px){
     .menu {
