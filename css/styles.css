@@ -37,9 +37,15 @@ img{
     
 }
 
-.name a{
+.name {
         text-transform: capitalize;
+        transition: color 2s, transform 2s;
       }
+
+.name:hover{
+    color:plum;
+    transform: rotate(360deg);
+}
 .item-footer{
     display:none;
 }
