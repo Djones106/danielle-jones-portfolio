@@ -30,13 +30,12 @@ a:hover{
 
 img{
     width: 100%;
-    animation: slideIn 1s 1s infinate ;
 }
+
 .menu li{
     font-family: 'Otomanopee One', sans-serif;
     text-transform: uppercase;
-    
-}
+    }
 
 #name {
         text-transform: capitalize;
@@ -132,6 +131,10 @@ input[type=text]{
 .profile-img{
     align-items: center;
     align-content: center;
+    animation-name: img-load;
+    animation: img-load 2s ease-in ;
+    transform: translateX(0%);
+
 }
 
 .title{
@@ -179,9 +182,17 @@ input[type=text]{
 } 
 
 /* Animation */
-@-webkit-keyframes slideIn {
-    from { transform: translateX(0%)};
-    to { transform: translateX(100%)};
+@keyframes img-load{
+    0%{
+        transform: translateX(-1000%);
+    }
+    90%{
+        transform: translateX(50%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+
 }
 
  /*Media Queries*/
