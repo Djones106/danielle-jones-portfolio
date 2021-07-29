@@ -250,8 +250,9 @@ input[type=text]{
         padding: 12px 20px;
         margin: 8px 0;
     }
-    
 }
+  
+
 @media (min-width: 1024px){
     .main-nav{
         display: flex;
